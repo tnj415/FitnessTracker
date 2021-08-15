@@ -25,7 +25,14 @@ const ExerciseSchema = new Schema({
     type: Number
   }
 });
+const WorkoutSchema = new Schema({
+  day: {
+    type: Date,
+  },
+  exercises:Array
+  
 
-const Exercise = mongoose.model("Exercise", ExerciseSchema);
-
-module.exports = Exercise;
+});
+//const Exercise = mongoose.model("Exercise", ExerciseSchema);
+const Workout = mongoose.model("Workout", WorkoutSchema);
+module.exports = Workout;
