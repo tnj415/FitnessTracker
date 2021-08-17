@@ -38,8 +38,8 @@ router.post("/", async (req, res) => {  // create
 });
 
 router.put("/:id", async (req, res) => { // update
-  //   const errors = validate (req.body);
   //    // server side validation
+  //   const errors = validate (req.body);
   // if (errors.size()>0){
   //    res.send (errors);
   //    return;
